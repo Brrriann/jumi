@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>주미산업 | 코마츠코리아 공식대리점 | 스피드도어·공장자동문 전문</title>
+  <meta name="description" content="주미산업은 코마츠코리아 공식대리점으로 스피드도어·공장자동문·크린룸 자재 전문 시공업체입니다. 수도권·영남 직영 시공, 무료 현장실측, 1년 무상보증." />
+  <meta property="og:title" content="주미산업 | 코마츠코리아 공식대리점 | 스피드도어·공장자동문 전문" />
+  <meta property="og:description" content="37년+ 경험, 19만대+ 시공 실적. 수도권·영남 직영 시공 | 무료 현장실측 | 1년 무상보증" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:  '#0F2A4A',
+            accent:   '#16A34A',
+            muted:    '#5A6478',
+            surface:  '#ffffff',
+            dark:     '#1A1A1A',
+          },
+          fontFamily: {
+            sans:  ['"Pretendard Variable"', 'Pretendard', 'Inter', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Pretendard Variable', Pretendard, Inter, sans-serif;
+      background-color: #ffffff;
+      color: #1A1A1A;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Hero 배경 그리드 ── */
+    .hero-bg {
+      background-color: #0F2A4A;
+      background-image:
+        linear-gradient(rgba(255,193,7,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,193,7,0.05) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    }
+
+    /* ── Sticky Header ── */
+    #header {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #header.scrolled {
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    }
+    #header.scrolled .nav-logo-text { color: #0F2A4A !important; }
+    #header.scrolled .nav-link      { color: #1A1A1A !important; }
+    #header.scrolled .nav-phone     { color: #0F2A4A !important; }
+    #header.scrolled .hline         { background-color: #0F2A4A !important; }
+
+    /* ── 통계 숫자 폰트 ── */
+    .stat-num { font-family: 'Inter', sans-serif; }
+
+    /* ── Focus ring ── */
+    :focus-visible { outline: 3px solid #FFC107; outline-offset: 2px; }
+
+    /* ── Reduced motion ── */
+    @media (prefers-reduced-motion: reduce) {
+      #header { transition: none !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-surface">
+
+<!-- ════════════════════════════════════════════════
+     00. HEADER — Sticky
+════════════════════════════════════════════════ -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- 로고 -->
+      <a href="#" class="flex items-center gap-2 flex-shrink-0" aria-label="주미산업 홈으로">
+        <div class="w-8 h-8 bg-accent rounded-sm flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 3h8v8H3V3zm0 10h8v8H3v-8zm10-10h8v8h-8V3zm0 10h8v8h-8v-8z"/>
+          </svg>
+        </div>
+        <span class="nav-logo-text text-white font-bold text-lg tracking-tight leading-none">
+          주미산업<br/>
+          <span class="text-accent text-[10px] font-medium tracking-widest">JUMI INDUSTRY</span>
+        </span>
+      </a>
+
+      <!-- 데스크탑 네비게이션 -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="주요 메뉴">
+        <a href="#products"  class="nav-link text-white/85 hover:text-accent text-sm font-medium transition-colors duration-200 cursor-pointer">제품 라인업</a>
+        <a href="#cases"     class="nav-link text-white/85 hover:text-accent text-sm font-medium transition-colors duration-200 cursor-pointer">시공 사례</a>
+        <a href="#about"     class="nav-link text-white/85 hover:text-accent text-sm font-medium transition-colors duration-200 cursor-pointer">회사 소개</a>
+        <a href="#contact"   class="nav-link text-white/85 hover:text-accent text-sm font-medium transition-colors duration-200 cursor-pointer">견적 문의</a>
+      </nav>
+
+      <!-- 전화번호 -->
+      <a href="tel:010-4857-9660"
+         class="nav-phone hidden md:flex items-center gap-2 text-accent font-bold text-sm tracking-wide hover:text-white transition-colors duration-200 cursor-pointer"
+         aria-label="전화 상담 010-4857-9660">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+        </svg>
+        010-4857-9660
+      </a>
+
+      <!-- 모바일 햄버거 -->
+      <button id="hamburger"
+              class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer"
+              aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hline block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+        <span class="hline block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+        <span class="hline block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 모바일 드롭다운 메뉴 -->
+  <div id="mobile-menu"
+       class="hidden md:hidden bg-primary border-t border-white/10"
+       role="navigation" aria-label="모바일 메뉴">
+    <div class="px-4 py-4 flex flex-col gap-1">
+      <a href="#products" class="text-white/85 hover:text-accent hover:bg-white/5 px-3 py-3 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer">제품 라인업</a>
+      <a href="#cases"    class="text-white/85 hover:text-accent hover:bg-white/5 px-3 py-3 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer">시공 사례</a>
+      <a href="#about"    class="text-white/85 hover:text-accent hover:bg-white/5 px-3 py-3 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer">회사 소개</a>
+      <a href="#contact"  class="text-white/85 hover:text-accent hover:bg-white/5 px-3 py-3 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer">견적 문의</a>
+      <div class="border-t border-white/10 mt-2 pt-3">
+        <a href="tel:010-4857-9660"
+           class="flex items-center gap-2 text-accent font-bold text-sm px-3 py-2 cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          본사 010-4857-9660
+        </a>
+        <a href="tel:051-902-9660"
+           class="flex items-center gap-2 text-white/70 text-sm px-3 py-2 cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          영남지사 051-902-9660
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════════════════════
+     01. HERO
+════════════════════════════════════════════════ -->
+<section id="hero" class="hero-bg min-h-screen flex items-center pt-16" aria-label="히어로 섹션">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 w-full">
+    <div class="max-w-3xl">
+
+      <!-- 공식대리점 뱃지 -->
+      <div class="inline-flex items-center gap-2 bg-accent/10 border border-accent/40 rounded-full px-4 py-1.5 mb-8">
+        <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-.723 3.065 3.745 3.745 0 01-3.065.723 3.745 3.745 0 01-3.068 1.593 3.745 3.745 0 01-3.068-1.593 3.745 3.745 0 01-3.065-.723 3.745 3.745 0 01-.723-3.065A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 01.723-3.065 3.745 3.745 0 013.065-.723A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.745 3.745 0 013.065.723 3.745 3.745 0 01.723 3.065A3.745 3.745 0 0121 12z"/>
+        </svg>
+        <span class="text-accent text-sm font-semibold tracking-wide">코마츠코리아 공식대리점</span>
+      </div>
+
+      <!-- 메인 헤드라인 -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-6">
+        공장이 멈추지 않는 도어,<br/>
+        <span class="text-accent">주미산업</span>이 책임집니다.
+      </h1>
+
+      <!-- 서브 텍스트 -->
+      <p class="text-white/70 text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl">
+        수도권·영남 전 지역 직영 시공&nbsp;&nbsp;·&nbsp;&nbsp;무료 현장실측&nbsp;&nbsp;·&nbsp;&nbsp;1년 무상 보증
+      </p>
+
+      <!-- CTA 버튼 3개 -->
+      <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+        <a href="#contact"
+           class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-yellow-400 text-primary font-bold text-base px-7 py-4 rounded-lg transition-colors duration-200 cursor-pointer shadow-lg shadow-accent/20"
+           aria-label="무료 현장실측 신청하기">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+          </svg>
+          무료 현장실측 신청
+        </a>
+
+        <a href="tel:010-4857-9660"
+           class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-base px-7 py-4 rounded-lg transition-colors duration-200 cursor-pointer"
+           aria-label="본사 전화 010-4857-9660">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          본사 010-4857-9660
+        </a>
+
+        <a href="tel:051-902-9660"
+           class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-base px-7 py-4 rounded-lg transition-colors duration-200 cursor-pointer"
+           aria-label="영남지사 전화 051-902-9660">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+          영남 051-902-9660
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 하단 스크롤 유도 화살표 -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce" aria-hidden="true">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     02. 신뢰 배지 바
+════════════════════════════════════════════════ -->
+<section id="trust-bar" aria-label="주요 실적 요약">
+  <div class="bg-accent py-10 sm:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-primary/20">
+
+        <!-- 37년+ -->
+        <div class="flex flex-col items-center text-center px-4">
+          <p class="stat-num text-4xl sm:text-5xl font-black text-primary leading-none mb-1">37<span class="text-2xl sm:text-3xl font-extrabold">년+</span></p>
+          <p class="text-primary/80 font-semibold text-sm sm:text-base mt-1">업계 경력</p>
+          <p class="text-primary/60 text-xs sm:text-sm mt-0.5">1988년 창업 이래</p>
+        </div>
+
+        <!-- 19만대+ -->
+        <div class="flex flex-col items-center text-center px-4">
+          <p class="stat-num text-4xl sm:text-5xl font-black text-primary leading-none mb-1">19<span class="text-2xl sm:text-3xl font-extrabold">만+</span></p>
+          <p class="text-primary/80 font-semibold text-sm sm:text-base mt-1">누적 시공 대수</p>
+          <p class="text-primary/60 text-xs sm:text-sm mt-0.5">전국 공장·물류센터</p>
+        </div>
+
+        <!-- 2개 지사 -->
+        <div class="flex flex-col items-center text-center px-4">
+          <p class="stat-num text-4xl sm:text-5xl font-black text-primary leading-none mb-1">2<span class="text-2xl sm:text-3xl font-extrabold">개</span></p>
+          <p class="text-primary/80 font-semibold text-sm sm:text-base mt-1">직영 지사 운영</p>
+          <p class="text-primary/60 text-xs sm:text-sm mt-0.5">본사(안산) · 영남(부산)</p>
+        </div>
+
+        <!-- 무료 현장실측 -->
+        <div class="flex flex-col items-center text-center px-4">
+          <div class="flex items-center gap-1 mb-1">
+            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-primary" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span class="stat-num text-3xl sm:text-4xl font-black text-primary leading-none">FREE</span>
+          </div>
+          <p class="text-primary/80 font-semibold text-sm sm:text-base mt-1">현장실측·상담</p>
+          <p class="text-primary/60 text-xs sm:text-sm mt-0.5">비용 없이 바로 신청</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     03. WHY 주미산업
+════════════════════════════════════════════════ -->
+<section id="about" class="bg-white py-20 lg:py-28" aria-label="주미산업을 선택해야 하는 이유">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 섹션 헤더 -->
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">WHY 주미산업</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">37년이 증명하는 3가지 이유</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">코마츠코리아 공식 인증부터 직영 시공, 신속 A/S까지 — 도어의 전 생애를 주미산업이 책임집니다.</p>
+    </div>
+
+    <!-- 3컬럼 카드 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+      <!-- 카드 1: 코마츠 공식 인증 -->
+      <div class="reveal bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md hover:border-accent/30 transition-all duration-200 cursor-default">
+        <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+          </svg>
+        </div>
+        <div class="inline-block bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-md mb-4">코마츠 공식 인증</div>
+        <h3 class="text-xl font-bold text-primary mb-3">공식 인증 대리점의 품질 보장</h3>
+        <p class="text-muted text-sm leading-relaxed mb-5">코마츠코리아의 엄격한 심사를 통과한 공식 인증 파트너. 정품 부품만 사용하며 코마츠 본사 기술 지원을 직접 받습니다.</p>
+        <div class="border-t border-gray-100 pt-5 flex items-center gap-3">
+          <div class="text-center">
+            <p class="stat-num text-2xl font-black text-accent">100<span class="text-base">%</span></p>
+            <p class="text-xs text-muted mt-0.5">정품 부품 사용</p>
+          </div>
+          <div class="w-px h-10 bg-gray-100"></div>
+          <div class="text-center">
+            <p class="stat-num text-2xl font-black text-accent">37<span class="text-base">년+</span></p>
+            <p class="text-xs text-muted mt-0.5">공식 파트너십</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카드 2: 직영 시공 -->
+      <div class="reveal bg-primary rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-200 cursor-default" style="transition-delay:0.1s">
+        <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
+          </svg>
+        </div>
+        <div class="inline-block bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-md mb-4">직영 시공</div>
+        <h3 class="text-xl font-bold text-white mb-3">외주 없는 직영 엔지니어 시공</h3>
+        <p class="text-white/65 text-sm leading-relaxed mb-5">본사·영남지사 직속 엔지니어가 직접 시공합니다. 하청 없이 일관된 품질을 유지하며 시공 후 책임도 명확합니다.</p>
+        <div class="border-t border-white/10 pt-5 flex items-center gap-3">
+          <div class="text-center">
+            <p class="stat-num text-2xl font-black text-accent">2<span class="text-base">개</span></p>
+            <p class="text-xs text-white/50 mt-0.5">직영 지사</p>
+          </div>
+          <div class="w-px h-10 bg-white/10"></div>
+          <div class="text-center">
+            <p class="stat-num text-2xl font-black text-accent">19<span class="text-base">만+</span></p>
+            <p class="text-xs text-white/50 mt-0.5">직영 시공 대수</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카드 3: A/S 정책 -->
+      <div class="reveal bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md hover:border-accent/30 transition-all duration-200 cursor-default" style="transition-delay:0.2s">
+        <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div class="inline-block bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-md mb-4">신속 A/S</div>
+        <h3 class="text-xl font-bold text-primary mb-3">24시간 출동, 1년 무상 보증</h3>
+        <p class="text-muted text-sm leading-relaxed mb-5">도어 고장은 생산 중단으로 직결됩니다. 24시간 콜센터 운영으로 당일·익일 긴급 출동을 보장하며 1년 무상보증을 제공합니다.</p>
+        <div class="border-t border-gray-100 pt-5 flex items-center gap-3">
+          <div class="text-center">
+            <p class="stat-num text-2xl font-black text-accent">24<span class="text-base">h</span></p>
+            <p class="text-xs text-muted mt-0.5">긴급 출동</p>
+          </div>
+          <div class="w-px h-10 bg-gray-100"></div>
+          <div class="text-center">
+            <p class="stat-num text-2xl font-black text-accent">1<span class="text-base">년</span></p>
+            <p class="text-xs text-muted mt-0.5">무상 보증</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     04. 제품 라인업
+════════════════════════════════════════════════ -->
+<section id="products" class="bg-[#f8faf8] py-20 lg:py-28" aria-label="제품 라인업">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 섹션 헤더 -->
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">PRODUCT LINE-UP</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">현장에 맞는 도어 솔루션</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">스피드도어부터 크린룸 자재까지 — 모든 산업 환경에 최적화된 제품을 제공합니다.</p>
+    </div>
+
+    <!-- 5개 제품 카드 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="product-list">
+
+      <!-- 제품 1: 스피드도어 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200">
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+              </svg>
+            </div>
+            <span class="text-xs font-semibold text-accent bg-accent/10 px-2.5 py-1 rounded-full">베스트셀러</span>
+          </div>
+          <h3 class="text-lg font-bold text-primary mb-2">스피드도어</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">고속 자동 개폐 시스템으로 에너지 손실을 최소화하고 물류 효율을 극대화합니다. 개폐 속도 최대 2m/s.</p>
+          <div class="flex gap-3 mb-4">
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">2m/s</p>
+              <p class="text-[10px] text-muted">최대 개폐속도</p>
+            </div>
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">70%</p>
+              <p class="text-[10px] text-muted">에너지 절감</p>
+            </div>
+          </div>
+          <button class="product-btn w-full flex items-center justify-between text-sm font-semibold text-primary hover:text-accent transition-colors duration-200 py-1 cursor-pointer" aria-expanded="false">
+            <span>상세 보기</span>
+            <svg class="product-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-detail border-t border-gray-100">
+          <div class="px-6 py-5 bg-[#f8faf8]">
+            <p class="text-sm font-semibold text-primary mb-3">주요 적용 환경</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>물류센터·냉동창고 출입구</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>자동차·전자 제조 라인</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>식품·의약품 공장 내부</li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold hover:underline cursor-pointer">견적 문의하기
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 제품 2: 공장자동문 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200">
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-primary mb-2">공장자동문</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">공장·물류센터 대형 출입구에 최적화된 자동문 시스템. 차량 통행과 보행자 안전을 동시에 고려한 설계.</p>
+          <div class="flex gap-3 mb-4">
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">대형</p>
+              <p class="text-[10px] text-muted">개구부 대응</p>
+            </div>
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">24h</p>
+              <p class="text-[10px] text-muted">연속 운전</p>
+            </div>
+          </div>
+          <button class="product-btn w-full flex items-center justify-between text-sm font-semibold text-primary hover:text-accent transition-colors duration-200 py-1 cursor-pointer" aria-expanded="false">
+            <span>상세 보기</span>
+            <svg class="product-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-detail border-t border-gray-100">
+          <div class="px-6 py-5 bg-[#f8faf8]">
+            <p class="text-sm font-semibold text-primary mb-3">주요 적용 환경</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>대형 물류·유통 센터</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>화물차 출입 제조 공장</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>주차장·차량 정비소</li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold hover:underline cursor-pointer">견적 문의하기
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 제품 3: 도어 인터락 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200">
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-primary mb-2">도어 인터락</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">두 도어가 동시에 열리지 않는 기밀 인터락 시스템. 방진·방충·온도 관리가 필요한 특수 구역에 필수 솔루션.</p>
+          <div class="flex gap-3 mb-4">
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">기밀</p>
+              <p class="text-[10px] text-muted">완전 밀폐</p>
+            </div>
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">GMP</p>
+              <p class="text-[10px] text-muted">기준 충족</p>
+            </div>
+          </div>
+          <button class="product-btn w-full flex items-center justify-between text-sm font-semibold text-primary hover:text-accent transition-colors duration-200 py-1 cursor-pointer" aria-expanded="false">
+            <span>상세 보기</span>
+            <svg class="product-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-detail border-t border-gray-100">
+          <div class="px-6 py-5 bg-[#f8faf8]">
+            <p class="text-sm font-semibold text-primary mb-3">주요 적용 환경</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>의약품·반도체 클린룸</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>식품 위생 구역 진입로</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>방폭·방진 특수 구역</li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold hover:underline cursor-pointer">견적 문의하기
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 제품 4: 크린룸 자재 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200">
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-primary mb-2">크린룸 자재</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">GMP·ISO 14644 기준에 맞는 클린룸 패널·도어·파티션 일괄 시공. 설계부터 시공까지 원스톱으로 제공.</p>
+          <div class="flex gap-3 mb-4">
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">ISO</p>
+              <p class="text-[10px] text-muted">14644 인증</p>
+            </div>
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">일괄</p>
+              <p class="text-[10px] text-muted">설계·시공</p>
+            </div>
+          </div>
+          <button class="product-btn w-full flex items-center justify-between text-sm font-semibold text-primary hover:text-accent transition-colors duration-200 py-1 cursor-pointer" aria-expanded="false">
+            <span>상세 보기</span>
+            <svg class="product-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-detail border-t border-gray-100">
+          <div class="px-6 py-5 bg-[#f8faf8]">
+            <p class="text-sm font-semibold text-primary mb-3">주요 적용 환경</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>반도체·디스플레이 제조</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>의약품·바이오 생산 구역</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>연구소·병원 무균 구역</li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold hover:underline cursor-pointer">견적 문의하기
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 제품 5: 해충방지 도어 -->
+      <div class="product-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200">
+        <div class="p-6">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-lg font-bold text-primary mb-2">해충방지 도어</h3>
+          <p class="text-muted text-sm leading-relaxed mb-4">식품가공·제약 현장에 특화된 해충 차단 도어. 에어커튼·방충망 일체형 설계로 HACCP 기준을 충족합니다.</p>
+          <div class="flex gap-3 mb-4">
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">HACCP</p>
+              <p class="text-[10px] text-muted">기준 충족</p>
+            </div>
+            <div class="text-center flex-1 bg-[#f8faf8] rounded-lg py-2.5">
+              <p class="stat-num text-lg font-black text-accent">99%</p>
+              <p class="text-[10px] text-muted">차단 효율</p>
+            </div>
+          </div>
+          <button class="product-btn w-full flex items-center justify-between text-sm font-semibold text-primary hover:text-accent transition-colors duration-200 py-1 cursor-pointer" aria-expanded="false">
+            <span>상세 보기</span>
+            <svg class="product-icon w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+            </svg>
+          </button>
+        </div>
+        <div class="product-detail border-t border-gray-100">
+          <div class="px-6 py-5 bg-[#f8faf8]">
+            <p class="text-sm font-semibold text-primary mb-3">주요 적용 환경</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>식품가공·음료 제조 공장</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>의약품·건강기능식품 제조</li>
+              <li class="flex items-center gap-2 text-sm text-muted"><svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>창고형 대형마트·냉장 창고</li>
+            </ul>
+            <a href="#contact" class="inline-flex items-center gap-1.5 mt-4 text-accent text-sm font-semibold hover:underline cursor-pointer">견적 문의하기
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     05. 적용 산업
+════════════════════════════════════════════════ -->
+<section id="industries" class="bg-white py-20 lg:py-28" aria-label="적용 산업">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 섹션 헤더 -->
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">INDUSTRIES</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">모든 산업 환경을 커버합니다</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">자동차 의장 라인부터 클린룸까지 — 19만 대의 시공 경험이 최적의 솔루션을 만듭니다.</p>
+    </div>
+
+    <!-- 6개 산업 그리드 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- 자동차·전자 -->
+      <div class="reveal group bg-[#f8faf8] hover:bg-primary rounded-2xl p-7 transition-all duration-300 cursor-default border border-gray-100 hover:border-primary">
+        <div class="w-12 h-12 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors duration-300">자동차·전자</h3>
+        <p class="text-muted group-hover:text-white/65 text-sm leading-relaxed mb-4 transition-colors duration-300">방진·항온 환경 유지가 필수인 제조 라인. 고속 개폐로 생산 효율을 극대화합니다.</p>
+        <div class="flex items-center gap-2">
+          <span class="stat-num text-xl font-black text-accent">2m/s</span>
+          <span class="text-xs text-muted group-hover:text-white/50 transition-colors duration-300">고속 개폐 속도</span>
+        </div>
+      </div>
+
+      <!-- 식품가공 -->
+      <div class="reveal group bg-[#f8faf8] hover:bg-primary rounded-2xl p-7 transition-all duration-300 cursor-default border border-gray-100 hover:border-primary" style="transition-delay:0.05s">
+        <div class="w-12 h-12 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.379a48.474 48.474 0 00-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors duration-300">식품가공</h3>
+        <p class="text-muted group-hover:text-white/65 text-sm leading-relaxed mb-4 transition-colors duration-300">HACCP 기준 해충방지 도어로 위생 환경을 완벽하게 보호합니다.</p>
+        <div class="flex items-center gap-2">
+          <span class="stat-num text-xl font-black text-accent">99%</span>
+          <span class="text-xs text-muted group-hover:text-white/50 transition-colors duration-300">해충 차단율</span>
+        </div>
+      </div>
+
+      <!-- 냉동·냉장 -->
+      <div class="reveal group bg-[#f8faf8] hover:bg-primary rounded-2xl p-7 transition-all duration-300 cursor-default border border-gray-100 hover:border-primary" style="transition-delay:0.1s">
+        <div class="w-12 h-12 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors duration-300">냉동·냉장</h3>
+        <p class="text-muted group-hover:text-white/65 text-sm leading-relaxed mb-4 transition-colors duration-300">고단열 스피드도어로 냉기 손실을 최소화하고 에너지 비용을 절감합니다.</p>
+        <div class="flex items-center gap-2">
+          <span class="stat-num text-xl font-black text-accent">70%</span>
+          <span class="text-xs text-muted group-hover:text-white/50 transition-colors duration-300">냉기 손실 절감</span>
+        </div>
+      </div>
+
+      <!-- 물류·유통 -->
+      <div class="reveal group bg-[#f8faf8] hover:bg-primary rounded-2xl p-7 transition-all duration-300 cursor-default border border-gray-100 hover:border-primary" style="transition-delay:0.15s">
+        <div class="w-12 h-12 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors duration-300">물류·유통</h3>
+        <p class="text-muted group-hover:text-white/65 text-sm leading-relaxed mb-4 transition-colors duration-300">빠른 개폐로 지게차·컨베이어 흐름을 방해하지 않는 물류 최적화 솔루션.</p>
+        <div class="flex items-center gap-2">
+          <span class="stat-num text-xl font-black text-accent">300만+</span>
+          <span class="text-xs text-muted group-hover:text-white/50 transition-colors duration-300">일 개폐 횟수 대응</span>
+        </div>
+      </div>
+
+      <!-- 세차·주유소 -->
+      <div class="reveal group bg-[#f8faf8] hover:bg-primary rounded-2xl p-7 transition-all duration-300 cursor-default border border-gray-100 hover:border-primary" style="transition-delay:0.2s">
+        <div class="w-12 h-12 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors duration-300">세차·주유소</h3>
+        <p class="text-muted group-hover:text-white/65 text-sm leading-relaxed mb-4 transition-colors duration-300">고압 세척·습기·염분에 강한 내습·내염 소재로 오랜 내구성을 보장합니다.</p>
+        <div class="flex items-center gap-2">
+          <span class="stat-num text-xl font-black text-accent">IP65</span>
+          <span class="text-xs text-muted group-hover:text-white/50 transition-colors duration-300">방수 등급</span>
+        </div>
+      </div>
+
+      <!-- 클린룸 -->
+      <div class="reveal group bg-[#f8faf8] hover:bg-primary rounded-2xl p-7 transition-all duration-300 cursor-default border border-gray-100 hover:border-primary" style="transition-delay:0.25s">
+        <div class="w-12 h-12 bg-accent/10 group-hover:bg-accent/20 rounded-xl flex items-center justify-center mb-5 transition-colors duration-300">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-bold text-primary group-hover:text-white mb-2 transition-colors duration-300">클린룸</h3>
+        <p class="text-muted group-hover:text-white/65 text-sm leading-relaxed mb-4 transition-colors duration-300">GMP·ISO 인증 대응 패널·도어 일괄 시공으로 완벽한 청정 환경을 구현합니다.</p>
+        <div class="flex items-center gap-2">
+          <span class="stat-num text-xl font-black text-accent">Class 1</span>
+          <span class="text-xs text-muted group-hover:text-white/50 transition-colors duration-300">ISO 청정도 대응</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     06. 시공 사례
+════════════════════════════════════════════════ -->
+<section id="cases" class="bg-[#f8faf8] py-20 lg:py-28" aria-label="시공 사례">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">CASE STUDY</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">현장이 증명하는 시공 실적</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">수도권부터 영남까지 — 다양한 업종의 현장에서 검증된 주미산업의 솔루션입니다.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 사례 1 -->
+      <div class="reveal bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+        <div class="h-44 bg-gradient-to-br from-primary to-[#1a4a7a] flex items-center justify-center relative">
+          <div class="text-center">
+            <svg class="w-12 h-12 text-accent mx-auto mb-2 opacity-60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+            </svg>
+            <span class="text-white/50 text-xs">시공 사진 준비중</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">수도권</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">자동차부품 제조</span>
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">스피드도어</span>
+          </div>
+          <h3 class="text-base font-bold text-primary mb-1">경기 화성 | 자동차부품 제조사</h3>
+          <p class="text-muted text-sm leading-relaxed">의장 라인 내 스피드도어 8대 교체 시공. 개폐 속도 향상으로 라인 정지 시간 35% 단축.</p>
+          <div class="flex items-center gap-1.5 mt-3">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs font-semibold text-accent">스피드도어 8대 · 2주 완공</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사례 2 -->
+      <div class="reveal bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" style="transition-delay:0.05s">
+        <div class="h-44 bg-gradient-to-br from-[#0a3d62] to-primary flex items-center justify-center relative">
+          <div class="text-center">
+            <svg class="w-12 h-12 text-accent mx-auto mb-2 opacity-60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+            </svg>
+            <span class="text-white/50 text-xs">시공 사진 준비중</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">영남</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">냉동물류</span>
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">인터락</span>
+          </div>
+          <h3 class="text-base font-bold text-primary mb-1">부산 사하구 | 냉동물류센터</h3>
+          <p class="text-muted text-sm leading-relaxed">냉동창고 냉동도어 4개소 + 인터락 2세트 설치. 냉기 손실 70% 절감, 전력비 월 120만 원 절약.</p>
+          <div class="flex items-center gap-1.5 mt-3">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs font-semibold text-accent">냉동도어 + 인터락 · 10일 완공</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사례 3 -->
+      <div class="reveal bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" style="transition-delay:0.1s">
+        <div class="h-44 bg-gradient-to-br from-[#145a32] to-[#1e8449] flex items-center justify-center relative">
+          <div class="text-center">
+            <svg class="w-12 h-12 text-white mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+            </svg>
+            <span class="text-white/50 text-xs">시공 사진 준비중</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">수도권</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">전자부품</span>
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">크린룸</span>
+          </div>
+          <h3 class="text-base font-bold text-primary mb-1">인천 남동공단 | 전자부품 제조</h3>
+          <p class="text-muted text-sm leading-relaxed">ISO Class 6 크린룸 패널 전면 교체 + 스피드도어 신규 설치. GMP 사전 검토 통과.</p>
+          <div class="flex items-center gap-1.5 mt-3">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs font-semibold text-accent">크린룸 + 스피드도어 · 3주 완공</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사례 4 -->
+      <div class="reveal bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" style="transition-delay:0.15s">
+        <div class="h-44 bg-gradient-to-br from-[#1a4a7a] to-[#0a3d62] flex items-center justify-center relative">
+          <div class="text-center">
+            <svg class="w-12 h-12 text-accent mx-auto mb-2 opacity-60" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+            </svg>
+            <span class="text-white/50 text-xs">시공 사진 준비중</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">영남</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">자동차</span>
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">스피드도어</span>
+          </div>
+          <h3 class="text-base font-bold text-primary mb-1">경남 창원 | 자동차 의장라인</h3>
+          <p class="text-muted text-sm leading-relaxed">의장 공장 내 기존 노후 도어 전량 교체. 스피드도어 12대 일괄 시공으로 라인 효율 42% 향상.</p>
+          <div class="flex items-center gap-1.5 mt-3">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs font-semibold text-accent">스피드도어 12대 · 3주 완공</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사례 5 -->
+      <div class="reveal bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" style="transition-delay:0.2s">
+        <div class="h-44 bg-gradient-to-br from-[#7d6608] to-[#b8860b] flex items-center justify-center relative">
+          <div class="text-center">
+            <svg class="w-12 h-12 text-white mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.379a48.474 48.474 0 00-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z"/>
+            </svg>
+            <span class="text-white/50 text-xs">시공 사진 준비중</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">수도권</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">식품가공</span>
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">해충방지</span>
+          </div>
+          <h3 class="text-base font-bold text-primary mb-1">경기 안산 | 식품가공 공장</h3>
+          <p class="text-muted text-sm leading-relaxed">해충방지 도어 + 에어커튼 일괄 설치. HACCP 정기 심사 위생 기준 통과. 연간 클레임 0건 달성.</p>
+          <div class="flex items-center gap-1.5 mt-3">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs font-semibold text-accent">해충방지 + 에어커튼 · 1주 완공</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사례 6 -->
+      <div class="reveal bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200" style="transition-delay:0.25s">
+        <div class="h-44 bg-gradient-to-br from-[#1a5276] to-[#2e86c1] flex items-center justify-center relative">
+          <div class="text-center">
+            <svg class="w-12 h-12 text-white mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+            </svg>
+            <span class="text-white/50 text-xs">시공 사진 준비중</span>
+          </div>
+          <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-1 rounded-md">영남</span>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">의약품</span>
+            <span class="text-xs bg-gray-100 text-muted px-2 py-0.5 rounded-full">크린룸</span>
+          </div>
+          <h3 class="text-base font-bold text-primary mb-1">대구 달성군 | 의약품 제조사</h3>
+          <p class="text-muted text-sm leading-relaxed">GMP 의약품 제조소 크린룸 도어 신규 설치. 식약처 GMP 실사 도어·기밀 기준 전항목 통과.</p>
+          <div class="flex items-center gap-1.5 mt-3">
+            <svg class="w-4 h-4 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-xs font-semibold text-accent">GMP 크린룸 도어 · 4주 완공</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     07. 시공 프로세스
+════════════════════════════════════════════════ -->
+<section id="process" class="bg-white py-20 lg:py-28" aria-label="시공 프로세스">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-16 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">PROCESS</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">문의부터 설치까지 7단계</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">복잡한 절차 없이, 주미산업이 현장 실측부터 교육까지 전 과정을 책임집니다.</p>
+    </div>
+
+    <!-- 데스크탑: 수평 타임라인 -->
+    <div class="hidden lg:grid grid-cols-7 gap-0 reveal">
+
+      <!-- Step 1 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-md shadow-accent/30 mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+          </svg>
+        </div>
+        <div class="absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-accent/60 to-gray-200"></div>
+        <div class="bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 1</div>
+        <p class="text-sm font-bold text-primary mb-1">문의 접수</p>
+        <p class="text-xs text-muted leading-snug">전화·온라인<br/>즉시 접수</p>
+        <p class="text-[10px] text-accent font-semibold mt-2 bg-accent/10 px-2 py-0.5 rounded-full">당일</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+          </svg>
+        </div>
+        <div class="absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-gray-200 to-gray-200"></div>
+        <div class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 2</div>
+        <p class="text-sm font-bold text-primary mb-1">전문 상담</p>
+        <p class="text-xs text-muted leading-snug">제품·규격<br/>전문 상담</p>
+        <p class="text-[10px] text-muted font-semibold mt-2 bg-gray-100 px-2 py-0.5 rounded-full">당일 가능</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+          </svg>
+        </div>
+        <div class="absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-gray-200 to-gray-200"></div>
+        <div class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 3</div>
+        <p class="text-sm font-bold text-primary mb-1">현장실측</p>
+        <p class="text-xs text-muted leading-snug">무료 방문<br/>실측 진행</p>
+        <p class="text-[10px] text-accent font-semibold mt-2 bg-accent/10 px-2 py-0.5 rounded-full">3영업일 내</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+          </svg>
+        </div>
+        <div class="absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-gray-200 to-gray-200"></div>
+        <div class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 4</div>
+        <p class="text-sm font-bold text-primary mb-1">견적 제출</p>
+        <p class="text-xs text-muted leading-snug">상세 견적서<br/>이메일 발송</p>
+        <p class="text-[10px] text-muted font-semibold mt-2 bg-gray-100 px-2 py-0.5 rounded-full">1일 내</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/>
+          </svg>
+        </div>
+        <div class="absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-gray-200 to-gray-200"></div>
+        <div class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 5</div>
+        <p class="text-sm font-bold text-primary mb-1">계약 체결</p>
+        <p class="text-xs text-muted leading-snug">계약서<br/>서명 완료</p>
+        <p class="text-[10px] text-muted font-semibold mt-2 bg-gray-100 px-2 py-0.5 rounded-full">협의</p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
+          </svg>
+        </div>
+        <div class="absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-gray-200 to-gray-200"></div>
+        <div class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 6</div>
+        <p class="text-sm font-bold text-primary mb-1">제작·설치</p>
+        <p class="text-xs text-muted leading-snug">품질 검수 후<br/>현장 설치</p>
+        <p class="text-[10px] text-muted font-semibold mt-2 bg-gray-100 px-2 py-0.5 rounded-full">2~4주</p>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="relative flex flex-col items-center text-center px-1">
+        <div class="w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-md shadow-accent/30 mb-4 z-10 relative">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+          </svg>
+        </div>
+        <div class="bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">STEP 7</div>
+        <p class="text-sm font-bold text-primary mb-1">교육·A/S</p>
+        <p class="text-xs text-muted leading-snug">운전자 교육<br/>1년 무상보증</p>
+        <p class="text-[10px] text-accent font-semibold mt-2 bg-accent/10 px-2 py-0.5 rounded-full">1년 보증 개시</p>
+      </div>
+
+    </div>
+
+    <!-- 모바일: 수직 타임라인 -->
+    <div class="lg:hidden space-y-0 reveal">
+      <div class="relative pl-16">
+        <div class="absolute left-0 top-0 bottom-0 w-px bg-gray-200 ml-7"></div>
+
+        <!-- 각 단계 -->
+        <div class="relative pb-8">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-md z-10">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          </div>
+          <div class="bg-[#f8faf8] rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-accent bg-accent/10 px-2 py-0.5 rounded-full">STEP 1</span><span class="text-[10px] text-muted">당일</span></div>
+            <p class="text-sm font-bold text-primary">문의 접수</p>
+            <p class="text-xs text-muted mt-0.5">전화·온라인 즉시 접수</p>
+          </div>
+        </div>
+
+        <div class="relative pb-8">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm z-10">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+          </div>
+          <div class="bg-[#f8faf8] rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-white bg-primary px-2 py-0.5 rounded-full">STEP 2</span><span class="text-[10px] text-muted">당일 가능</span></div>
+            <p class="text-sm font-bold text-primary">전문 상담</p>
+            <p class="text-xs text-muted mt-0.5">제품·규격 전문 상담</p>
+          </div>
+        </div>
+
+        <div class="relative pb-8">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm z-10">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          </div>
+          <div class="bg-[#f8faf8] rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-white bg-primary px-2 py-0.5 rounded-full">STEP 3</span><span class="text-[10px] text-accent font-semibold">3영업일 내</span></div>
+            <p class="text-sm font-bold text-primary">현장실측</p>
+            <p class="text-xs text-muted mt-0.5">무료 방문 실측 진행</p>
+          </div>
+        </div>
+
+        <div class="relative pb-8">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm z-10">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          </div>
+          <div class="bg-[#f8faf8] rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-white bg-primary px-2 py-0.5 rounded-full">STEP 4</span><span class="text-[10px] text-muted">1일 내</span></div>
+            <p class="text-sm font-bold text-primary">견적 제출</p>
+            <p class="text-xs text-muted mt-0.5">상세 견적서 이메일 발송</p>
+          </div>
+        </div>
+
+        <div class="relative pb-8">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm z-10">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"/></svg>
+          </div>
+          <div class="bg-[#f8faf8] rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-white bg-primary px-2 py-0.5 rounded-full">STEP 5</span><span class="text-[10px] text-muted">협의</span></div>
+            <p class="text-sm font-bold text-primary">계약 체결</p>
+            <p class="text-xs text-muted mt-0.5">계약서 서명 완료</p>
+          </div>
+        </div>
+
+        <div class="relative pb-8">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-sm z-10">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+          </div>
+          <div class="bg-[#f8faf8] rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-white bg-primary px-2 py-0.5 rounded-full">STEP 6</span><span class="text-[10px] text-muted">2~4주</span></div>
+            <p class="text-sm font-bold text-primary">제작·설치</p>
+            <p class="text-xs text-muted mt-0.5">품질 검수 후 현장 설치</p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-9 top-0 w-14 h-14 rounded-full bg-accent flex items-center justify-center shadow-md shadow-accent/30 z-10">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          </div>
+          <div class="bg-accent/10 border border-accent/20 rounded-xl p-4 ml-2">
+            <div class="flex items-center gap-2 mb-1"><span class="text-[10px] font-bold text-white bg-accent px-2 py-0.5 rounded-full">STEP 7</span><span class="text-[10px] text-accent font-semibold">1년 보증 개시</span></div>
+            <p class="text-sm font-bold text-primary">교육·A/S</p>
+            <p class="text-xs text-muted mt-0.5">운전자 교육 + 1년 무상보증</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     08. A/S 정책
+════════════════════════════════════════════════ -->
+<section id="as-policy" class="bg-primary py-20 lg:py-28" aria-label="A/S 정책">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 임팩트 카피 -->
+    <div class="text-center mb-16 reveal">
+      <span class="inline-block bg-white/10 text-white/70 text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-6">A/S POLICY</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+        도어가 멈추면<br/>
+        <span class="text-accent">생산이 멈춥니다.</span>
+      </h2>
+      <p class="text-white/60 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        주미산업은 고장 발생 시 24시간 긴급 출동으로 생산 중단을 최소화합니다.<br class="hidden sm:block"/>
+        정품 부품 상시 보유 + 직영 엔지니어 출동으로 빠르고 정확하게 해결합니다.
+      </p>
+    </div>
+
+    <!-- 4개 포인트 카드 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+
+      <div class="bg-white/8 border border-white/10 rounded-2xl p-7 hover:bg-white/12 transition-colors duration-200">
+        <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
+          </svg>
+        </div>
+        <p class="stat-num text-3xl font-black text-accent mb-2">100<span class="text-lg">%</span></p>
+        <h3 class="text-base font-bold text-white mb-2">정품 부품 상시 보유</h3>
+        <p class="text-white/55 text-sm leading-relaxed">코마츠 정품 부품을 항시 재고로 보유. 부품 수급 지연 없이 즉시 수리 가능.</p>
+      </div>
+
+      <div class="bg-white/8 border border-white/10 rounded-2xl p-7 hover:bg-white/12 transition-colors duration-200">
+        <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <p class="stat-num text-3xl font-black text-accent mb-2">24<span class="text-lg">h</span></p>
+        <h3 class="text-base font-bold text-white mb-2">24시간 긴급 출동</h3>
+        <p class="text-white/55 text-sm leading-relaxed">24시간 콜센터 운영. 야간·주말·공휴일 긴급 출동 가능. 당일·익일 처리 목표.</p>
+      </div>
+
+      <div class="bg-accent rounded-2xl p-7">
+        <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+          </svg>
+        </div>
+        <p class="stat-num text-3xl font-black text-white mb-2">1<span class="text-lg">년</span></p>
+        <h3 class="text-base font-bold text-white mb-2">무상 보증</h3>
+        <p class="text-white/75 text-sm leading-relaxed">설치 완료 후 1년간 무상 보증. 부품·인건비 포함 완전 무상으로 책임 처리.</p>
+      </div>
+
+      <div class="bg-white/8 border border-white/10 rounded-2xl p-7 hover:bg-white/12 transition-colors duration-200">
+        <div class="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
+          </svg>
+        </div>
+        <p class="text-accent text-lg font-black mb-2">타사 제품</p>
+        <h3 class="text-base font-bold text-white mb-2">타사 제품도 점검·수리</h3>
+        <p class="text-white/55 text-sm leading-relaxed">코마츠 외 브랜드 스피드도어·자동문도 점검 및 수리. 현장 상황에 맞는 솔루션 제시.</p>
+      </div>
+
+    </div>
+
+    <!-- 하단 CTA -->
+    <div class="text-center mt-14 reveal">
+      <a href="#contact"
+         class="inline-flex items-center gap-2 bg-accent hover:bg-green-400 text-white font-bold text-base px-8 py-4 rounded-lg transition-colors duration-200 cursor-pointer shadow-lg shadow-accent/30">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+        </svg>
+        지금 바로 A/S 문의하기
+      </a>
+      <p class="text-white/40 text-sm mt-3">본사 010-4857-9660 · 영남지사 051-902-9660</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     09. 영업 지역
+════════════════════════════════════════════════ -->
+<section id="region" class="bg-[#f8faf8] py-20 lg:py-28" aria-label="영업 지역">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">SERVICE AREA</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">수도권·영남 전 지역 직영 시공</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">본사(안산)와 영남지사(부산) 두 곳에서 전국을 빠르게 커버합니다.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+      <!-- 본사 -->
+      <div class="reveal bg-primary rounded-2xl p-8 text-white">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 bg-accent rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-white/50 text-xs font-semibold tracking-widest">HEADQUARTERS</p>
+            <h3 class="text-xl font-bold text-white">본사 — 경기 안산</h3>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            <span class="text-white/70 text-sm">경기도 안산시</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            <a href="tel:010-4857-9660" class="text-accent font-bold text-sm hover:text-white transition-colors cursor-pointer">010-4857-9660</a>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-5">
+          <p class="text-white/50 text-xs font-semibold mb-3 tracking-wide">담당 권역</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-white/10 text-white/80 text-xs px-3 py-1 rounded-full">서울특별시</span>
+            <span class="bg-white/10 text-white/80 text-xs px-3 py-1 rounded-full">경기도</span>
+            <span class="bg-white/10 text-white/80 text-xs px-3 py-1 rounded-full">인천광역시</span>
+            <span class="bg-white/10 text-white/80 text-xs px-3 py-1 rounded-full">충청남도</span>
+            <span class="bg-white/10 text-white/80 text-xs px-3 py-1 rounded-full">충청북도</span>
+            <span class="bg-accent/20 text-accent text-xs px-3 py-1 rounded-full font-semibold">전국 원거리 협의</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 영남지사 -->
+      <div class="reveal bg-white border-2 border-accent/20 rounded-2xl p-8" style="transition-delay:0.1s">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 bg-accent rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21 12 3l9.75 18H2.25z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-muted text-xs font-semibold tracking-widest">BRANCH OFFICE</p>
+            <h3 class="text-xl font-bold text-primary">영남지사 — 부산</h3>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            <span class="text-muted text-sm">부산광역시</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            <a href="tel:051-902-9660" class="text-accent font-bold text-sm hover:text-primary transition-colors cursor-pointer">051-902-9660</a>
+          </div>
+        </div>
+        <div class="border-t border-gray-100 pt-5">
+          <p class="text-muted text-xs font-semibold mb-3 tracking-wide">담당 권역</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 text-dark text-xs px-3 py-1 rounded-full">부산광역시</span>
+            <span class="bg-gray-100 text-dark text-xs px-3 py-1 rounded-full">경상남도</span>
+            <span class="bg-gray-100 text-dark text-xs px-3 py-1 rounded-full">경상북도</span>
+            <span class="bg-gray-100 text-dark text-xs px-3 py-1 rounded-full">대구광역시</span>
+            <span class="bg-gray-100 text-dark text-xs px-3 py-1 rounded-full">울산광역시</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     10. FAQ
+════════════════════════════════════════════════ -->
+<section id="faq" class="bg-white py-20 lg:py-28" aria-label="자주 묻는 질문">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">FAQ</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">자주 묻는 질문</h2>
+      <p class="text-muted text-base sm:text-lg leading-relaxed">궁금한 점이 있으시면 언제든지 전화로 문의해 주세요.</p>
+    </div>
+
+    <div class="space-y-3 reveal">
+
+      <!-- FAQ 1 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">스피드도어 설치 기간은 얼마나 걸리나요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4">계약 후 제작~설치까지 통상 <strong class="text-primary">2~4주</strong> 소요됩니다. 규격·사양·현장 여건에 따라 달라질 수 있으며, 현장 실측 상담 시 정확한 일정을 안내해 드립니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">현장실측은 무료인가요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4">네, <strong class="text-primary">수도권·영남 전 지역 무료</strong>로 현장실측을 진행합니다. 전화 또는 하단 문의 폼으로 신청해 주시면 <strong class="text-primary">3영업일 이내</strong>로 일정을 잡아드립니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">A/S 출동은 얼마나 빠르게 오나요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4"><strong class="text-primary">24시간 콜센터</strong>를 운영하여 야간·주말·공휴일에도 긴급 접수가 가능합니다. 통상 연락 후 <strong class="text-primary">당일~익일 출동</strong>을 목표로 하며, 본사·영남지사 양쪽에서 가까운 지사가 출동합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">코마츠 제품이 아닌 타사 도어도 수리해 주나요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4">네, 코마츠 외 타사 스피드도어·공장자동문도 <strong class="text-primary">점검 및 수리 서비스</strong>를 제공합니다. 먼저 전화로 기종·증상을 알려주시면 출동 가능 여부를 빠르게 안내드립니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">보증 기간이 지난 후에도 수리가 가능한가요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4">네, 1년 무상보증 종료 후에도 <strong class="text-primary">코마츠 정품 부품을 활용한 유상 수리 서비스</strong>를 제공합니다. 부품을 상시 재고로 보유하고 있어 신속한 처리가 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">영남 지역에서도 빠르게 시공이 가능한가요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4">네, <strong class="text-primary">부산에 영남지사</strong>를 직영으로 운영하고 있어 부산·경남·경북·대구·울산 전 지역에 빠른 시공과 A/S가 가능합니다. 영남 지역 문의는 <a href="tel:051-902-9660" class="text-accent font-semibold hover:underline">051-902-9660</a>으로 연락주세요.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="border border-gray-200 rounded-xl overflow-hidden">
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left hover:bg-[#f8faf8] transition-colors duration-200 cursor-pointer" aria-expanded="false">
+          <span class="text-sm sm:text-base font-semibold text-primary pr-4">크린룸·냉동창고 같은 특수 환경도 설치되나요?</span>
+          <svg class="faq-icon w-5 h-5 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <div class="px-6 pb-5 text-sm text-muted leading-relaxed border-t border-gray-100">
+            <p class="pt-4">네, <strong class="text-primary">GMP·ISO 기준 크린룸 자재·도어</strong>와 냉동·냉장 창고용 특수 도어 시공이 가능합니다. 특수 환경 전문 엔지니어가 현장 실측부터 설치·교육까지 전 과정을 담당합니다.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     11. 견적 문의 폼
+════════════════════════════════════════════════ -->
+<section id="contact" class="bg-[#f8faf8] py-20 lg:py-28" aria-label="견적 문의">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">CONTACT</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">무료 견적 문의</h2>
+      <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">현장 상황을 알려주시면 전문 상담사가 빠르게 연락드립니다.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 reveal">
+
+      <!-- 폼 (3/5) -->
+      <div class="lg:col-span-3 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        <h3 class="text-lg font-bold text-primary mb-6">견적 신청서</h3>
+        <form id="contact-form" novalidate>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="company" class="block text-xs font-semibold text-dark mb-1.5">회사명 <span class="text-red-500">*</span></label>
+              <input id="company" name="company" type="text" required placeholder="(주)회사명"
+                class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark placeholder-gray-300 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors" />
+            </div>
+            <div>
+              <label for="name" class="block text-xs font-semibold text-dark mb-1.5">담당자 <span class="text-red-500">*</span></label>
+              <input id="name" name="name" type="text" required placeholder="홍길동"
+                class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark placeholder-gray-300 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="phone" class="block text-xs font-semibold text-dark mb-1.5">연락처 <span class="text-red-500">*</span></label>
+              <input id="phone" name="phone" type="tel" required placeholder="010-0000-0000"
+                class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark placeholder-gray-300 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors" />
+            </div>
+            <div>
+              <label for="region" class="block text-xs font-semibold text-dark mb-1.5">지역</label>
+              <select id="region" name="region"
+                class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors cursor-pointer">
+                <option value="">지역 선택</option>
+                <option>서울</option><option>경기</option><option>인천</option>
+                <option>충청남도</option><option>충청북도</option>
+                <option>부산</option><option>경상남도</option><option>경상북도</option>
+                <option>대구</option><option>울산</option><option>기타</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="industry" class="block text-xs font-semibold text-dark mb-1.5">업종</label>
+              <select id="industry" name="industry"
+                class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors cursor-pointer">
+                <option value="">업종 선택</option>
+                <option>자동차·전자</option><option>식품가공</option>
+                <option>냉동·냉장</option><option>물류·유통</option>
+                <option>세차·주유소</option><option>클린룸</option><option>기타</option>
+              </select>
+            </div>
+            <div>
+              <label for="product" class="block text-xs font-semibold text-dark mb-1.5">관심 제품</label>
+              <select id="product" name="product"
+                class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors cursor-pointer">
+                <option value="">제품 선택</option>
+                <option>스피드도어</option><option>공장자동문</option>
+                <option>도어 인터락</option><option>크린룸 자재</option>
+                <option>해충방지 도어</option><option>기타·모름</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-5">
+            <label for="message" class="block text-xs font-semibold text-dark mb-1.5">요청사항</label>
+            <textarea id="message" name="message" rows="4" placeholder="설치 장소, 도어 수량, 특이사항 등을 적어주시면 더 정확한 견적을 드릴 수 있습니다."
+              class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-dark placeholder-gray-300 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"></textarea>
+          </div>
+          <div class="flex items-start gap-2 mb-6">
+            <input id="privacy" name="privacy" type="checkbox" required
+              class="mt-0.5 w-4 h-4 accent-green-600 cursor-pointer flex-shrink-0" />
+            <label for="privacy" class="text-xs text-muted leading-relaxed cursor-pointer">
+              <span class="text-dark font-semibold">[필수]</span> 개인정보 수집·이용에 동의합니다. 수집된 정보는 견적 상담 목적으로만 사용되며 3개월 후 파기됩니다.
+            </label>
+          </div>
+          <button type="submit"
+            class="w-full bg-accent hover:bg-green-600 text-white font-bold text-base py-4 rounded-lg transition-colors duration-200 cursor-pointer flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/>
+            </svg>
+            무료 견적 신청하기
+          </button>
+          <p id="form-msg" class="text-xs text-muted text-center mt-3 hidden">잠시 후 이메일 클라이언트가 열립니다. 직접 발송하거나 아래 전화번호로 문의해 주세요.</p>
+        </form>
+      </div>
+
+      <!-- 연락처 정보 (2/5) -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+
+        <div class="bg-primary rounded-2xl p-7 text-white">
+          <p class="text-white/50 text-xs font-semibold tracking-widest mb-4">DIRECT CONTACT</p>
+          <div class="space-y-4">
+            <a href="tel:010-4857-9660" class="flex items-center gap-3 group cursor-pointer">
+              <div class="w-10 h-10 bg-accent/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 transition-colors">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </div>
+              <div>
+                <p class="text-white/50 text-[10px] font-semibold">본사 (수도권·충청)</p>
+                <p class="text-accent font-bold text-lg stat-num group-hover:text-white transition-colors">010-4857-9660</p>
+              </div>
+            </a>
+            <a href="tel:051-902-9660" class="flex items-center gap-3 group cursor-pointer">
+              <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-white/15 transition-colors">
+                <svg class="w-5 h-5 text-white/70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </div>
+              <div>
+                <p class="text-white/50 text-[10px] font-semibold">영남지사 (부산·경남·경북·대구·울산)</p>
+                <p class="text-white font-bold text-lg stat-num group-hover:text-accent transition-colors">051-902-9660</p>
+              </div>
+            </a>
+          </div>
+          <div class="border-t border-white/10 mt-5 pt-5">
+            <p class="text-white/50 text-xs mb-1">운영 시간</p>
+            <p class="text-white text-sm font-semibold">평일 08:00 – 18:00</p>
+            <p class="text-accent text-xs mt-0.5 font-semibold">A/S 긴급 출동은 24시간 접수</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+          <p class="text-muted text-xs font-semibold tracking-widest mb-4">EMAIL</p>
+          <a href="mailto:info@jumisanup.com" class="flex items-center gap-3 group cursor-pointer">
+            <div class="w-10 h-10 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            </div>
+            <span class="text-sm font-semibold text-primary group-hover:text-accent transition-colors">info@jumisanup.com</span>
+          </a>
+        </div>
+
+        <div class="bg-accent/10 border border-accent/20 rounded-2xl p-5 flex items-start gap-3">
+          <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/></svg>
+          <p class="text-sm text-dark leading-relaxed">폼 제출 후 이메일로 견적 요청이 발송됩니다. 빠른 상담은 전화를 이용해 주세요.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════
+     12. FOOTER
+════════════════════════════════════════════════ -->
+<footer class="bg-primary text-white" aria-label="푸터">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+
+      <!-- 회사 정보 -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 bg-accent rounded-sm flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h8v8H3V3zm0 10h8v8H3v-8zm10-10h8v8h-8V3zm0 10h8v8h-8v-8z"/></svg>
+          </div>
+          <span class="font-bold text-lg leading-none">주미산업<br/><span class="text-accent text-[10px] font-medium tracking-widest">JUMI INDUSTRY</span></span>
+        </div>
+        <p class="text-white/55 text-sm leading-relaxed mb-4">코마츠코리아 공식대리점<br/>스피드도어·공장자동문 전문 시공업체</p>
+        <p class="text-white/40 text-xs leading-relaxed">
+          사업자등록번호: 000-00-00000<br/>
+          대표자: 홍길동<br/>
+          주소: 경기도 안산시 단원구 OO로 000
+        </p>
+      </div>
+
+      <!-- 제품 링크 -->
+      <div>
+        <p class="text-white/50 text-xs font-semibold tracking-widest mb-4">PRODUCTS</p>
+        <ul class="space-y-2">
+          <li><a href="#products" class="text-white/65 hover:text-accent text-sm transition-colors cursor-pointer">스피드도어</a></li>
+          <li><a href="#products" class="text-white/65 hover:text-accent text-sm transition-colors cursor-pointer">공장자동문</a></li>
+          <li><a href="#products" class="text-white/65 hover:text-accent text-sm transition-colors cursor-pointer">도어 인터락</a></li>
+          <li><a href="#products" class="text-white/65 hover:text-accent text-sm transition-colors cursor-pointer">크린룸 자재</a></li>
+          <li><a href="#products" class="text-white/65 hover:text-accent text-sm transition-colors cursor-pointer">해충방지 도어</a></li>
+        </ul>
+      </div>
+
+      <!-- 연락처 -->
+      <div>
+        <p class="text-white/50 text-xs font-semibold tracking-widest mb-4">CONTACT</p>
+        <div class="space-y-3">
+          <div>
+            <p class="text-white/40 text-xs mb-0.5">본사 (수도권·충청)</p>
+            <a href="tel:010-4857-9660" class="text-accent font-bold stat-num hover:text-white transition-colors cursor-pointer">010-4857-9660</a>
+          </div>
+          <div>
+            <p class="text-white/40 text-xs mb-0.5">영남지사 (부산·경남·경북·대구·울산)</p>
+            <a href="tel:051-902-9660" class="text-white/80 font-bold stat-num hover:text-accent transition-colors cursor-pointer">051-902-9660</a>
+          </div>
+          <div>
+            <p class="text-white/40 text-xs mb-0.5">이메일</p>
+            <a href="mailto:info@jumisanup.com" class="text-white/65 text-sm hover:text-accent transition-colors cursor-pointer">info@jumisanup.com</a>
+          </div>
+          <div>
+            <p class="text-white/40 text-xs mb-0.5">운영시간</p>
+            <p class="text-white/65 text-sm">평일 08:00 – 18:00 <span class="text-accent text-xs">/ A/S 24h</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/35 text-xs">© 2025 주미산업. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#hero" class="text-white/35 hover:text-white/70 text-xs transition-colors cursor-pointer">개인정보처리방침</a>
+        <span class="text-white/20 text-xs">|</span>
+        <a href="#hero" class="text-white/35 hover:text-white/70 text-xs transition-colors cursor-pointer">이용약관</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ════════════════════════════════════════════════
+     모바일 Sticky CTA (하단 고정)
+════════════════════════════════════════════════ -->
+<div class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-lg pb-safe" aria-label="빠른 문의">
+  <div class="grid grid-cols-3 divide-x divide-gray-200">
+    <a href="tel:010-4857-9660"
+       class="flex flex-col items-center justify-center py-3.5 gap-1 text-primary hover:bg-gray-50 transition-colors cursor-pointer"
+       aria-label="전화 상담">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+      <span class="text-[11px] font-semibold">전화 상담</span>
+    </a>
+    <a href="https://pf.kakao.com/_jumisanup"
+       class="flex flex-col items-center justify-center py-3.5 gap-1 text-[#3A1D1D] hover:bg-[#FEE500]/10 transition-colors cursor-pointer"
+       aria-label="카카오톡 문의" target="_blank" rel="noopener noreferrer">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.6 5.1 4 6.6L5 21l4.4-2.3c.8.2 1.7.3 2.6.3 5.523 0 10-3.477 10-7.8S17.523 3 12 3z"/>
+      </svg>
+      <span class="text-[11px] font-semibold">카카오톡</span>
+    </a>
+    <a href="#contact"
+       class="flex flex-col items-center justify-center py-3.5 gap-1 bg-accent text-white hover:bg-green-600 transition-colors cursor-pointer"
+       aria-label="견적 신청">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+      <span class="text-[11px] font-semibold">견적 신청</span>
+    </a>
+  </div>
+</div>
+<!-- 모바일 CTA 높이만큼 body 하단 여백 -->
+<div class="h-16 md:hidden" aria-hidden="true"></div>
+
+
+<!-- ════════════════════════════════════════════════
+     JS
+════════════════════════════════════════════════ -->
+<script>
+  // ── Sticky Header ──
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }, { passive: true });
+
+  // ── 모바일 햄버거 ──
+  const hamburger  = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    hamburger.setAttribute('aria-expanded', String(!isOpen));
+    hamburger.setAttribute('aria-label', isOpen ? '메뉴 열기' : '메뉴 닫기');
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', '메뉴 열기');
+    });
+  });
+
+  // ── Scroll Reveal (IntersectionObserver) ──
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ── 제품 아코디언 ──
+  document.querySelectorAll('.product-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card   = btn.closest('.product-card');
+      const detail = card.querySelector('.product-detail');
+      const icon   = btn.querySelector('.product-icon');
+      const isOpen = detail.classList.contains('open');
+
+      document.querySelectorAll('.product-detail').forEach(d => d.classList.remove('open'));
+      document.querySelectorAll('.product-icon').forEach(i => i.style.transform = '');
+      document.querySelectorAll('.product-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+      if (!isOpen) {
+        detail.classList.add('open');
+        icon.style.transform = 'rotate(45deg)';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── FAQ 아코디언 ──
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      const icon    = btn.querySelector('.faq-icon');
+      const isOpen  = content.classList.contains('open');
+
+      document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = '');
+      document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+      if (!isOpen) {
+        content.classList.add('open');
+        icon.style.transform = 'rotate(45deg)';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ── 견적 폼 제출 (mailto fallback) ──
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const fd = new FormData(this);
+      if (!fd.get('privacy')) {
+        alert('개인정보 수집·이용에 동의해 주세요.');
+        return;
+      }
+      const subject = encodeURIComponent('주미산업 견적 문의 - ' + (fd.get('company') || ''));
+      const body = encodeURIComponent(
+        '회사명: ' + (fd.get('company') || '') +
+        '\n담당자: ' + (fd.get('name') || '') +
+        '\n연락처: ' + (fd.get('phone') || '') +
+        '\n지역: '   + (fd.get('region') || '') +
+        '\n업종: '   + (fd.get('industry') || '') +
+        '\n제품: '   + (fd.get('product') || '') +
+        '\n요청사항: ' + (fd.get('message') || '')
+      );
+      window.location.href = 'mailto:info@jumisanup.com?subject=' + subject + '&body=' + body;
+      document.getElementById('form-msg').classList.remove('hidden');
+    });
+  }
+</script>
+
+</body>
+</html>
