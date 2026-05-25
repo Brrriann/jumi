@@ -1,0 +1,31 @@
+# 주미산업 (JUMI INDUSTRY) - robots.txt
+# 검색엔진 크롤러 정책
+
+# 모든 크롤러 허용
+User-agent: *
+Allow: /
+
+# 네이버 검색 봇 (Yeti)
+User-agent: Yeti
+Allow: /
+
+# 구글 검색 봇
+User-agent: Googlebot
+Allow: /
+
+# 다음 검색 봇 (Daum)
+User-agent: Daumoa
+Allow: /
+
+# 빙 검색 봇
+User-agent: Bingbot
+Allow: /
+
+# 크롤링 제외 경로
+Disallow: /asset/internal/
+Disallow: /재사용_가공/
+Disallow: /*.tmp$
+Disallow: /*?*utm_
+
+# 사이트맵 위치
+Sitemap: https://jumi-industry.com/sitemap.xml
