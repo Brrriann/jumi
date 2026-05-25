@@ -2107,7 +2107,7 @@
     const items = trustBar.querySelectorAll('.stat-num');
     const targets = [
       { el: items[0], from: 0, to: 27, suffix: '년+', duration: 1600 },
-      { el: items[1], from: 0, to: 19, suffix: '만+', duration: 1800 },
+      { el: items[1], from: 0, to: 2780, suffix: '+', duration: 1800 },
       { el: items[2], from: 0, to: 2,  suffix: '개',  duration: 800  },
     ];
 
@@ -2125,7 +2125,7 @@
           const progress = Math.min(elapsed / duration, 1);
           const eased    = 1 - Math.pow(1 - progress, 3);
           const val      = Math.round(from + (to - from) * eased);
-          el.childNodes[0].textContent = val;
+          el.childNodes[0].textContent = val.toLocaleString();
           if (inner) inner.textContent = suffix.slice(0); // keep suffix span intact
           if (progress < 1) requestAnimationFrame(tick);
         })(start);
