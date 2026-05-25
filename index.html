@@ -1027,10 +1027,10 @@
 <!-- ════════════════════════════════════════════════
      07. 시공 프로세스
 ════════════════════════════════════════════════ -->
-<section id="process" class="bg-white py-20 lg:py-28 overflow-hidden" aria-label="시공 프로세스">
+<section id="process" class="bg-white py-20 lg:py-28" aria-label="시공 프로세스">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="text-center mb-16 reveal relative z-10 bg-white">
+    <div class="text-center mb-16 reveal">
       <span class="inline-block bg-accent/10 text-accent text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-4">PROCESS</span>
       <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">문의부터 설치까지 7단계</h2>
       <p class="text-muted text-base sm:text-lg max-w-xl mx-auto leading-relaxed">복잡한 절차 없이, 주미산업이 현장 실측부터 교육까지 전 과정을 책임집니다.</p>
@@ -1140,8 +1140,8 @@
     </div>
 
     <!-- 모바일: 수직 타임라인 -->
-    <div class="lg:hidden reveal relative z-0">
-      <div class="relative pl-16 overflow-hidden">
+    <div class="lg:hidden reveal">
+      <div class="relative pl-16">
         <div class="absolute left-0 top-0 bottom-0 w-px bg-gray-200 ml-7"></div>
 
         <!-- 각 단계 -->
@@ -2056,9 +2056,9 @@
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
     gsap.registerPlugin(ScrollTrigger);
 
-    // 프로세스 섹션 타이틀 Sticky PIN
+    // 프로세스 섹션 타이틀 Sticky PIN (데스크탑 lg 이상에서만 적용)
     const processSection = document.querySelector('#process');
-    if (processSection) {
+    if (processSection && window.innerWidth >= 1024) {
       const processHeader = processSection.querySelector('.text-center.mb-16');
       if (processHeader) {
         ScrollTrigger.create({
