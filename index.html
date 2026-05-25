@@ -1618,7 +1618,7 @@
             </svg>
             무료 견적 신청하기
           </button>
-          <p id="form-msg" class="text-xs text-muted text-center mt-3 hidden">잠시 후 이메일 클라이언트가 열립니다. 직접 발송하거나 아래 전화번호로 문의해 주세요.</p>
+          <p id="form-msg" class="text-sm text-center mt-3 hidden"></p>
         </form>
       </div>
 
@@ -1866,28 +1866,58 @@
     });
   });
 
-  // ── 견적 폼 제출 (mailto fallback) ──
+  // ── 견적 폼 제출 (Web3Forms) ──
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener('submit', async function (e) {
       e.preventDefault();
       const fd = new FormData(this);
       if (!fd.get('privacy')) {
         alert('개인정보 수집·이용에 동의해 주세요.');
         return;
       }
-      const subject = encodeURIComponent('주미산업 견적 문의 - ' + (fd.get('company') || ''));
-      const body = encodeURIComponent(
-        '회사명: ' + (fd.get('company') || '') +
-        '\n담당자: ' + (fd.get('name') || '') +
-        '\n연락처: ' + (fd.get('phone') || '') +
-        '\n지역: '   + (fd.get('region') || '') +
-        '\n업종: '   + (fd.get('industry') || '') +
-        '\n제품: '   + (fd.get('product') || '') +
-        '\n요청사항: ' + (fd.get('message') || '')
-      );
-      window.location.href = 'mailto:info@jumisanup.com?subject=' + subject + '&body=' + body;
-      document.getElementById('form-msg').classList.remove('hidden');
+
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const formMsg   = document.getElementById('form-msg');
+      submitBtn.disabled = true;
+      submitBtn.textContent = '전송 중...';
+
+      const data = {
+        access_key: '0ec4480d-bfe0-4f2a-8284-4e6ca52e5a6b',
+        subject:    '주미산업 견적 문의 - ' + (fd.get('company') || ''),
+        from_name:  '주미산업 홈페이지',
+        company:    fd.get('company') || '',
+        name:       fd.get('name')    || '',
+        phone:      fd.get('phone')   || '',
+        region:     fd.get('region')  || '',
+        industry:   fd.get('industry')|| '',
+        product:    fd.get('product') || '',
+        message:    fd.get('message') || ''
+      };
+
+      try {
+        const res  = await fetch('https://api.web3forms.com/submit', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body:    JSON.stringify(data)
+        });
+        const json = await res.json();
+
+        if (json.success) {
+          contactForm.reset();
+          formMsg.textContent  = '✅ 문의가 성공적으로 접수됐습니다. 빠른 시일 내 연락드리겠습니다.';
+          formMsg.className    = 'text-sm text-accent font-semibold text-center mt-3';
+        } else {
+          formMsg.textContent  = '전송에 실패했습니다. 아래 전화번호로 직접 문의해 주세요.';
+          formMsg.className    = 'text-sm text-red-500 text-center mt-3';
+        }
+      } catch (err) {
+        formMsg.textContent  = '네트워크 오류가 발생했습니다. 아래 전화번호로 직접 문의해 주세요.';
+        formMsg.className    = 'text-sm text-red-500 text-center mt-3';
+      } finally {
+        submitBtn.disabled    = false;
+        submitBtn.innerHTML   = '<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>무료 견적 신청하기';
+      }
     });
   }
 
