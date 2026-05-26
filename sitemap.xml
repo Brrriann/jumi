@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns:image="http://www.google.com/schemas/sitemaps-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://jumi-industry.com/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://jumi-industry.com/og-image-v2.jpg</image:loc>
-      <image:title>주미산업 스피드도어·공장자동문 전문 시공</image:title>
-      <image:caption>주미산업 - 코마츠코리아 공식대리점, 27년 경험, 2,780+대 시공 실적</image:caption>
-    </image:image>
   </url>
 
 </urlset>
