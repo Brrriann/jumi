@@ -2608,18 +2608,21 @@
     gsap.registerPlugin(ScrollTrigger);
 
     // 프로세스 섹션 타이틀 Sticky PIN (데스크탑 lg 이상에서만 적용)
+    // gsap.matchMedia로 감싸 뷰포트가 1024px 미만이 되면 PIN을 자동 해제한다.
+    // (innerWidth 1회 체크 방식은 데스크탑→모바일 전환 시 PIN이 남아 제목행이 겹치는 문제가 있었음)
     const processSection = document.querySelector('#process');
-    if (processSection && window.innerWidth >= 1024) {
-      const processHeader = processSection.querySelector('.text-center.mb-16');
-      if (processHeader) {
-        ScrollTrigger.create({
+    const processHeader  = processSection && processSection.querySelector('.text-center.mb-16');
+    if (processHeader) {
+      gsap.matchMedia().add('(min-width: 1024px)', () => {
+        const st = ScrollTrigger.create({
           trigger: processSection,
           start:   'top 12%',
           end:     'bottom 88%',
           pin:     processHeader,
           pinSpacing: false,
         });
-      }
+        return () => st.kill();
+      });
     }
 
     // 섹션별 scrub reveal (섹션 헤더 텍스트)
