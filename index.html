@@ -31,12 +31,16 @@
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt"   content="주미산업 스피드도어 클린룸 시공 현장" />
+  <meta property="og:image:secure_url" content="https://jumi-industry.com/og-image-v2.jpg" />
+  <meta property="og:image:type"       content="image/jpeg" />
 
   <!-- Twitter Card (X·트위터 공유) -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="주미산업 | 스피드도어·공장자동문 전문 시공" />
   <meta name="twitter:description" content="27년 경험 · 2780+대 시공 실적 · 코마츠코리아 공식대리점. 무료 현장실측 · 1년 무상보증." />
   <meta name="twitter:image"       content="https://jumi-industry.com/og-image-v2.jpg" />
+  <!-- 네이버 대표 이미지 힌트 (Yeti 크롤러가 검색결과 썸네일 선정 시 참고) -->
+  <link rel="image_src" href="https://jumi-industry.com/og-image-v2.jpg" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <!-- 구조화 데이터 (Schema.org JSON-LD) -->
@@ -185,9 +189,30 @@
         "name": "주미산업 | 코마츠코리아 공식대리점 | 스피드도어·공장자동문 전문",
         "isPartOf": { "@id": "https://jumi-industry.com/#website" },
         "about":    { "@id": "https://jumi-industry.com/#organization" },
-        "primaryImageOfPage": "https://jumi-industry.com/og-image-v2.jpg",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://jumi-industry.com/og-image-v2.jpg",
+          "width": 1200,
+          "height": 630,
+          "caption": "주미산업 스피드도어 클린룸 시공 현장"
+        },
         "inLanguage": "ko-KR",
         "description": "주미산업은 코마츠코리아 공식대리점으로 스피드도어·공장자동문·크린룸 자재 전문 시공업체입니다."
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://jumi-industry.com/#sitenav",
+        "name": "주미산업 주요 메뉴",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": 6,
+        "itemListElement": [
+          { "@type": "SiteNavigationElement", "position": 1, "name": "제품 라인업",    "description": "실내형·실내외형·비상탈출형·냉장냉동형·방폭형 스피드도어", "url": "https://jumi-industry.com/#products" },
+          { "@type": "SiteNavigationElement", "position": 2, "name": "시공 사례",      "description": "공장·물류센터·클린룸·냉동창고 스피드도어 시공 실적", "url": "https://jumi-industry.com/#cases" },
+          { "@type": "SiteNavigationElement", "position": 3, "name": "회사 소개",      "description": "27년 경력 코마츠코리아 공식대리점 주미산업", "url": "https://jumi-industry.com/#about" },
+          { "@type": "SiteNavigationElement", "position": 4, "name": "시공 프로세스",  "description": "문의부터 설치·A/S까지 7단계", "url": "https://jumi-industry.com/#process" },
+          { "@type": "SiteNavigationElement", "position": 5, "name": "자주 묻는 질문", "description": "스피드도어 견적·시공·A/S 관련 FAQ", "url": "https://jumi-industry.com/#faq" },
+          { "@type": "SiteNavigationElement", "position": 6, "name": "견적 문의",      "description": "무료 현장실측·견적 문의", "url": "https://jumi-industry.com/#contact" }
+        ]
       }
     ]
   }
@@ -487,9 +512,9 @@
 ════════════════════════════════════════════════ -->
 <section id="hero" class="hero-section min-h-screen flex items-center pt-16" aria-label="히어로 섹션">
   <!-- 배경 이미지 1 (창고 + 스피드도어 + 지게차) -->
-  <div id="hero-img-1" class="hero-img hero-img-1" style="background-image:url('asset/hf_20260525_073408_ec699474-d668-4521-ab0a-a44d40b5f905.png')" role="img" aria-label="스피드도어 설치 현장"></div>
+  <div id="hero-img-1" class="hero-img hero-img-1" style="background-image:url('asset/hero-speeddoor-install.jpg')" role="img" aria-label="스피드도어 설치 현장"></div>
   <!-- 배경 이미지 2 (어두운 창고 + 지게차 통과) -->
-  <div id="hero-img-2" class="hero-img hero-img-2" style="background-image:url('asset/hf_20260525_073351_5b28d784-3dda-4a1e-8fac-17502082f0eb.png')" role="img" aria-label="스피드도어 통과 장면"></div>
+  <div id="hero-img-2" class="hero-img hero-img-2" style="background-image:url('asset/hero-speeddoor-pass.jpg')" role="img" aria-label="스피드도어 통과 장면"></div>
   <!-- 다크 오버레이 -->
   <div class="absolute inset-0 bg-primary/82" style="z-index:1"></div>
   <!-- 좌측 텍스트 영역 그라데이션 스크림 -->

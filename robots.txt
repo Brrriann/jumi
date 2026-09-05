@@ -22,8 +22,8 @@ User-agent: Bingbot
 Allow: /
 
 # 크롤링 제외 경로
+# (시공사례 이미지 폴더 /재사용_가공/ 은 페이지에서 실제 사용 중이므로 차단하지 않음 → 이미지 검색·썸네일 수집 허용)
 Disallow: /asset/internal/
-Disallow: /재사용_가공/
 Disallow: /*.tmp$
 Disallow: /*?*utm_
 
